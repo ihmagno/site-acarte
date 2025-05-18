@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contato - ACARTE</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <header>
-    <h1>Inscreva-se ou Fale Conosco</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contato - ACARTE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="Logo ACARTE">
+        </a>
+      </div>
 
-  <section class="contato">
-    <form action="mailto:contato@acarte.org" method="post" enctype="text/plain">
+      <!-- Botão só aparece no mobile -->
+      <div class="menu-toggle" id="mobile-menu">☰</div>
 
-::contentReference[oaicite:0]{index=0}
+      <ul class="nav-links" id="nav">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="kids.html">Musicalização Infantil</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+
+    <header class="page-header">
+      <h1>Inscreva-se ou Fale Conosco</h1>
+    </header>
+
+    <div class="orange-section">
+      <section class="contato">
+        <form action="mailto:contato@acarte.org" method="post" enctype="text/plain">
+        ::contentReference[oaicite:0]{index=0}
+      </section>
+    </div>
+  </body>
+</html>
+
+
  

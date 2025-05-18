@@ -5,26 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ACARTE - Arte para a Vida Toda</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar">
-      <div class="logo">
-        <a href="index.html"><img src="assets/logo.png" alt="" width="120px"></a>
-      </div>
-      <ul ul class="nav-links">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="kids.html">Musicalização Infantil</a></li>
-        <li><a href="galeria.html">Galeria</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="valores.html">Nossa Missão</a></li>
-        <li><a href="eventos.html">Eventos</a></li>
-        <li><a href="eventos.html">Igreja</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Logo ACARTE" width="120px">
+      </a>
+    </div>
+
+    <!-- Botão só aparece no mobile -->
+    <div class="menu-toggle" id="mobile-menu">☰</div>
+
+    <ul class="nav-links" id="nav">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="cursos.html">Cursos</a></li>
+      <li><a href="kids.html">Musicalização Infantil</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="eventos.html">Eventos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
   </nav>
   <header class="hero">
     <video autoplay muted loop class="hero-video">

@@ -5,27 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Musicalização Infantil - ACARTE</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Logo ACARTE">
+      </a>
+    </div>
+
+    <!-- Botão só aparece no mobile -->
+    <div class="menu-toggle" id="mobile-menu">☰</div>
+
+    <ul class="nav-links" id="nav">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="cursos.html">Cursos</a></li>
+      <li><a href="kids.html">Musicalização Infantil</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="eventos.html">Eventos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+  
+  <header class="page-header">
     <h1>Musicalização Infantil</h1>
   </header>
 
-  <section class="musicalizacao">
-    <h2>Benefícios da Musicalização na Infância</h2>
-    <ul>
-      <li>Desenvolvimento cognitivo e motor</li>
-      <li>Estímulo à criatividade</li>
-      <li>Melhoria na socialização</li>
-    </ul>
+  <div class="orange-section">
+    <section class="musicalizacao">
+      <h2>Benefícios da Musicalização na Infância</h2>
+      <ul>
+        <li>Desenvolvimento cognitivo e motor</li>
+        <li>Estímulo à criatividade</li>
+        <li>Melhoria na socialização</li>
+      </ul>
 
-    <h2>Um dia na ACARTE Kids</h2>
-    <p>As crianças iniciam com atividades rítmicas, seguidas por jogos musicais e práticas com instrumentos adaptados à idade.</p>
+      <h2>Um dia na ACARTE Kids</h2>
+      <p>As crianças iniciam com atividades rítmicas, seguidas por jogos musicais e práticas com instrumentos adaptados à idade.</p>
 
-    <h2>Depoimentos de Pais</h2>
-    <blockquote>
-      "Meu filho adora as aulas e está mais comunicativo desde que começou!" - Maria Oliveira
-    </blockquote>
-  </section>
+      <h2>Depoimentos de Pais</h2>
+      <blockquote>
+        "Meu filho adora as aulas e está mais comunicativo desde que começou!" - Maria Oliveira
+      </blockquote>
+    </section>
+  </div>
+  
 </body>
 </html>

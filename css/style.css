@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
+  background-color: #fa8f26;
   color: #333;
   line-height: 1.6;
 }
@@ -30,6 +30,10 @@ body {
   text-decoration: none;
 }
 
+.navbar .logo img {
+  width: 100px;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -44,6 +48,15 @@ body {
   text-transform: uppercase;
   transition: color 0.3s ease;
 }
+
+/* Botão hambúrguer só visível no mobile */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #002b5a;
+  cursor: pointer;
+}
+
 
 .nav-links li a:hover {
   color: #ffc107;
@@ -65,18 +78,29 @@ header h1 {
 
 /* Responsivo */
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
   .nav-links {
+    display: none;
     flex-direction: column;
-    background-color: #402f56;
+    background-color: #f6f5f4;
     position: absolute;
     top: 60px;
     right: 0;
     width: 100%;
-    display: none;
+    padding: 1rem;
   }
 
   .nav-links.active {
     display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 0.5rem 0;
   }
 
   .navbar {
@@ -168,18 +192,43 @@ header h1 {
 }
 
 /* Seções de Cursos, Kids, Blog, Galeria */
+.page-header{
+  display: flex;
+  align-items: center; /* Alinha os itens flexíveis verticalmente ao centro */
+  justify-content: center; /* Se você também quiser alinhar horizontalmente */
+}
+
 section {
   padding: 2rem;
 }
 
-.curso-card, .musicalizacao, .galeria, .blog, .missao, .eventos, .contato {
-  max-width: 900px;
-  margin: 0 auto;
-  background: #fff;
+.orange-section {
+  padding: 3rem 1rem;
+}
+
+.card-dark,
+.curso-card,
+.galeria,
+.blog,
+.eventos,
+.contato,
+.musicalizacao {
+  background-color: #002b5a;
+  color: #f6f5f4;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  margin-bottom: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Força links e negrito no card a ficarem claros */
+.card-dark a,
+.card-dark strong,
+.card-dark b,
+.curso-card a,
+.curso-card strong {
+  color: #f6f5f4;
 }
 
 .curso-card img, .galeria-imagens img {
@@ -276,3 +325,4 @@ button:hover {
   box-shadow: 0 0 20px #000;
   transition: transform 0.3s ease;
 }
+
